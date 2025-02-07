@@ -1,0 +1,43 @@
+@use 'variables' as *;
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input{
+        background: 0;
+        border: 1px solid #FFFFFF;
+        border-radius: 6px;
+        padding: 8px 8px 8px 44px;
+        font-size: 16px;
+        background-image: url(/src/assets/icons/icon-search.png);
+        background-position: 8px center;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        color: $white-color;     
+        outline: none;   
+        &::placeholder{
+            color: $white-color;        
+        }
+    }
+    div{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        div{
+            gap: 8px;
+            span{
+                font-size: 16px;
+                color: $white-color;
+                display: flex;
+                gap: 4px;        
+            }
+            button{
+                background: 0;
+                color: $white-color;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+}

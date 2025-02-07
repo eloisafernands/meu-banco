@@ -1,0 +1,29 @@
+@use 'variables' as *;
+
+.tagLink {
+    .link {
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.forgotPassword .link {
+    font-size: 14px;
+    color: $blue-color;
+    font-weight: normal;
+    font-weight: 600;
+}
+.createAccount{
+    text-align: center;
+    .link {
+        font-size: 24px;
+        color: $gray-color-500;
+        font-weight: 100;
+        strong{
+            color: $green-color;
+            font-weight: 600;
+        }   
+    }
+}

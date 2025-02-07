@@ -1,5 +1,15 @@
+import '/src/styles/Default.scss';
+import Header from '../components/Header/';
+
 const Tranferencias = () => {
-    return <h2>Tranferencias Page</h2>;
-  };
-  
-  export default Tranferencias;
+  return (
+    <>
+      <Header />
+      <div className="containerDefault">
+      <h2>Placeholder de navegação</h2>
+      </div>
+    </>
+  );
+};
+
+export default Tranferencias;

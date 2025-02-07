@@ -1,5 +1,15 @@
+import '/src/styles/Default.scss';
+import Header from '../components/Header/';
+
 const Carteira = () => {
-    return <h2>Carteira Page</h2>;
-  };
-  
-  export default Carteira;
+  return (
+    <>
+      <Header />
+      <div className="containerDefault">
+      <h2>Placeholder de navegação</h2>
+      </div>
+    </>
+  );
+};
+
+export default Carteira;

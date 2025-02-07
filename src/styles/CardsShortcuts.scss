@@ -1,0 +1,58 @@
+@use 'variables' as *;
+
+.cardsShortcuts{
+    padding-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    .card{
+        background-color: $white-color;
+        box-shadow: $box-shadow;
+        border-radius: 8px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .percentTag{
+            font-size: 24px;
+            color: $green-color;
+            font-weight: 100;
+        }        
+        .spanTag{
+            background-color: $green-color;
+            color: $white-color;
+            width: fit-content;
+            border-radius: 6px;
+            padding: 4px 8px;
+            font-size: 12px;
+        }                
+        &.cardEnd{
+            justify-content: end;
+        }
+        &.divAddShortcuts{
+            background-color: $gray-color-100;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            .spanShortcuts{
+                font-size: 24px;
+                background-color: $gray-color-400;
+                color: $white-color;
+                font-weight: 700;
+                border-radius: 100%;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 16px;
+            }
+            p{
+                color: $gray-color-400;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+}

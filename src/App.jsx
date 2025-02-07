@@ -1,11 +1,12 @@
+import { UserProvider } from "./context/UserContext";
 import AppRoutes from "./routes"; 
-import './styles/main.css'
+import './styles/main.scss';
 
-function App() {
-
-  return (    
+const App = () => {
+  return (   
+    <UserProvider> 
       <AppRoutes />
+    </UserProvider>
   )
 }
-
-export default App
+export default App;

@@ -1,0 +1,14 @@
+@use 'variables' as *;
+
+.dashLayout{
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+    .dashContentPage{
+        width: 80%;
+        padding: 24px 33px 33px;
+        background: $green-color;
+        display: flex;
+        flex-direction: column;
+    }
+}
